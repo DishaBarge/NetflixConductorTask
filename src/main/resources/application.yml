@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/AtheleteDB
+  cloud:
+   config:
+     enabled: false
+  application:
+    name: NetflixConductorTask
+    dependencies:
+      netflix-conductor: http://localhost:8080
+      netflix-conductor-ui-base-uri: http://localhost:5000
+
+server:
+  port: 8087
+logging:
+  level:
+    com.example.NetflixConductorTask.Service: DEBUG
