@@ -17,6 +17,7 @@ public class AtheleteRestController {
 
     @Autowired
     private AtheleteService atheleteService;
+    
 
     @GetMapping("/atheletes")
     public ResponseEntity<List<Athelete>> getAllAthelete() {
